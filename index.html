@@ -8,32 +8,38 @@
     <title>Bootstrap / SCSS Sandpit</title>
 </head>
 <body class="d-flex text-center bg-secondary">
-    <div class="form-login">
-        <img src="/node_modules/bootstrap-icons/icons/bootstrap.svg" 
-        alt="bootstrap icon"
-        height="72"
-        width="72"
-        class="mb-4">
+    <form action="#" class="form-login needs-validation">
+        <div class="form-group">
+            <img src="/node_modules/bootstrap-icons/icons/bootstrap.svg" 
+            alt="bootstrap icon"
+            height="72"
+            width="72"
+            class="mb-4">
+    
+            <h1 class="h3 mb-3 font-weight-normal">Bootstrap 5 Login</h1>
+    
+            <label for="inputEmail" class="visually-hidden">Email Address</label>
+            <input type="email" id="inputEmail" class="form-control mb-2 ip-3" placeholder="Email Address" required>
+    
+            <label for="inputPassword" class="visually-hidden">Password</label>
+            <input type="password" id="inputPassword" class="form-control mb-2 ip-3" placeholder="Password" required>
+    
+            <div class="checkbox mb-3 form-check">
+                <label>
+                    <input type="checkbox" class="form-check-input" value="remember-me">Remember me
+                </label>
+            </div>
 
-        <h1 class="h3 mb-3 font-weight-normal">Bootstrap 5 Login</h1>
-
-        <label for="inputEmail" class="visually-hidden">Email Address</label>
-        <input type="email" id="inputEmail" class="form-control mb-2 ip-3" placeholder="Email Address" required autofocus>
-
-        <label for="inputPassword" class="visually-hidden">Password</label>
-        <input type="password" id="inputPassword" class="form-control mb-2 ip-3" placeholder="Password" required>
-
-        <div class="checkbox mb-3 form-check">
-            <label>
-                <input type="checkbox" class="form-check-input" value="remember-me">Remember me
-            </label>
+            <div class="d-grid">
+                <button type="submit" id="submit" class="btn btn-primary btn-lg">Login</button>
+            </div>
         </div>
-        <div class="d-grid">
-            <button type="submit" class="btn btn-primary btn-lg">Login</button>
-        </div>
-    </div>
+    </form>
+    
 
     <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
